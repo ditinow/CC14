@@ -9,9 +9,7 @@ sudo apt install openjdk-11-jre-headless -y
 sudo apt install openjdk-11-jdk-headless -y
 
 克隆CC14，如果没有Git请安装
-git clone http://www.github.com/ditinow/CC14/
-
-cd cc14
+git clone http://www.github.com/ditinow/cc14/
 cd cc14
 sh ./compile.sh
 sudo ufw allow 19884:19886/tcp
