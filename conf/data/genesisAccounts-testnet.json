@@ -1,0 +1,12 @@
+{
+    "balances": {
+         "NXT-AQNF-V28K-DBDS-8X637": 40000000000000000,
+         "NXT-Z593-SA66-BMYD-4LVFF": 30000000000000000,
+         "NXT-8R9P-NU69-LCD4-CBRXL": 30000000000000000
+     },
+     "publicKeys": [
+         "8d589188f647dcf656d42e075080be68d622c77c0b8000c7d4d35abc1e743100",
+         "b6ee1c06fb6c8d58eae5d949dea45616303a601ced39e5bb164874b946e8131b",
+         "8cfa61f3bda3badc2cba2ff76b61c67bfb94d2591d174803a456d97bbc0b9812"
+     ]
+ }

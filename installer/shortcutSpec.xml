@@ -1,0 +1,20 @@
+<shortcuts>
+	<skipIfNotSupported/>
+	<defaultCurrentUser/>
+	<programGroup defaultName="CC14" location="startMenu"/>
+	<shortcut
+		name="CC14 Server"
+		target="$INSTALL_PATH\cc14.exe"
+		commandLine=""
+		workingDirectory="$INSTALL_PATH"
+        description="Start CC14 server"
+		iconFile="$INSTALL_PATH\html\www\favicon.ico"
+        iconIndex="0"
+        initialState="normal"
+        programGroup="yes"
+		desktop="yes"
+        applications="no"
+        startMenu="no"
+		startup="no">
+	</shortcut>	
+</shortcuts>
