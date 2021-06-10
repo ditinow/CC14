@@ -14,12 +14,8 @@ git clone http://www.github.com/ditinow/CC14/
 cd cc14
 cd cc14
 sh ./compile.sh
-sudo ufw allow 19884
-sudo ufw allow 19885
-sudo ufw allow 19886
-sudo ufw allow 6874
-sudo ufw allow 6875
-sudo ufw allow 6876
+sudo ufw allow 19884:19886/tcp
+sudo ufw allow 6874:6876/tcp
 chmod 751 run.sh
 chmod 751 stop.sh
 ./run.sh --daemon
@@ -31,6 +27,8 @@ C:\Program Files (x86)\Java\jre1.8.0_291\bin\java.exe -cp classes;lib\*;conf;add
 
 Linux与Windows都使用以下地址接入钱包。
 http://localhost:19886/
+或者所在计算机的IP地址
+http://ipaddress:19886/
 
 具体修改如下
 vim src/java/nxt/Nxt.java
