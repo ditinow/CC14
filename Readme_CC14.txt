@@ -21,7 +21,10 @@ chmod 751 stop.sh
 Windows用户请下载后运行:
 run.bat
 默认 JAVA 在windows path里。如果CC14不能正常启动，请在CMD输入以下命令：
-C:\Program Files (x86)\Java\jre1.8.0_291\bin\java.exe -cp classes;lib\*;conf;addons\classes;addons\lib\* -Dnxt.runtime.mode=daemon nxt.Nxt
+java.exe -cp classes;lib\*;conf;addons\classes;addons\lib\* -Dnxt.runtime.mode=daemon nxt.Nxt
+
+Windows path 设置JAVA可以参考以下链接。或者拆卸并重装JAVA JRE。
+https://www.yuque.com/ican/canjava/path-classpath
 
 Linux与Windows都使用以下地址接入钱包。
 http://localhost:19886/
@@ -29,7 +32,7 @@ http://localhost:19886/
 http://ipaddress:19886/
 
 具体修改如下
-vim src/java/nxt/Nxt.java
+ src/java/nxt/Nxt.java
 	line 56 APPLICATION = "CryptoC14"
 
 vim src/java/nxt/Constants.java
