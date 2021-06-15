@@ -1,25 +1,27 @@
 CC14 区块链修改至 Nxt Blockchain Creation Kit 版本号 1.12.2.
 
 Ubuntu Linux 请登陆终端后做以下更新：
-sudo apt update
-sudo apt upgrade -y
-sudo apt install zip -y
-sudo apt install dos2unix
-sudo apt install openjdk-11-jre-headless -y
-sudo apt install openjdk-11-jdk-headless -y
+$ sudo apt update
+$ sudo apt upgrade -y
+$ sudo apt install zip -y
+$ sudo apt install dos2unix -y
+$ sudo apt install openjdk-11-jre-headless -y
+$ sudo apt install openjdk-11-jdk-headless -y
 
-克隆CC14，如果没有Git请安装
-git clone http://www.github.com/ditinow/cc14/
-cd cc14
-sh ./compile.sh
-sudo ufw allow 19884:19886/tcp
-sudo ufw allow 6874:6876/tcp
-chmod 751 run.sh
-chmod 751 stop.sh
-./run.sh --daemon
+克隆CC14，
+（如果没有Git请安装 $ sudo apt install git -y)
+$ git clone https://www.github.com/ditinow/cc14/
+（）
+$ cd cc14
+$ sh ./compile.sh
+$ sudo ufw allow 19884:19886/tcp
+$ sudo ufw allow 6874:6876/tcp
+$ chmod 751 run.sh
+$ chmod 751 stop.sh
+$ ./run.sh --daemon
 
 Windows用户请下载后运行:
-run.bat
+cc14\run.bat
 默认 JAVA 在windows path里。如果CC14不能正常启动，请在CMD输入以下命令：
 java.exe -cp classes;lib\*;conf;addons\classes;addons\lib\* -Dnxt.runtime.mode=daemon nxt.Nxt
 
